@@ -58,7 +58,7 @@ $("#border_bottom_left_radius").change(function(){
     $("#css-output" ).text(`border-radius: ${newtext};`);
 });
 
-$("#radius-genrator").click(function(){
+$("#radius-generator").click(function(){
 
     $(".box" ).css( "border-bottom-left-radius", `${randomIntFromInterval(0, 100)}%`);
     let bl = $(".box" ).css( "border-bottom-left-radius");
@@ -83,4 +83,8 @@ $("#radius-genrator").click(function(){
     newtext = $(".box" ).css("border-radius");
     $(".box-container" ).css("border-radius", `${newtext}`);
     $("#css-output" ).text(`border-radius: ${newtext};`);
+});
+
+$("#bg-toggle").click(function () {
+    $(".box").toggleClass( "img-bg" );
 });
