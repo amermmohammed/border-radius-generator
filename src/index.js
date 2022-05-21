@@ -63,17 +63,17 @@ $("#radius-genrator").click(function(){
     $(".box" ).css( "border-bottom-left-radius", `${randomIntFromInterval(0, 100)}%`);
     let bl = $(".box" ).css( "border-bottom-left-radius");
     $("#border_bottom_left_radius").val(parseInt(bl));
-    $("#bl-lab").text(`Top Left: ${parseInt(bl)}%`);
+    $("#bl-lab").text(`Bottom Left: ${parseInt(bl)}%`);
 
     $( ".box" ).css( "border-bottom-right-radius", `${randomIntFromInterval(0, 100)}%`);
     let br = $( ".box" ).css( "border-bottom-right-radius");
     $("#border_bottom_right_radius").val(parseInt(br));
-    $("#br-lab").text(`Top Left: ${parseInt(br)}%`);
+    $("#br-lab").text(`Bottom Left: ${parseInt(br)}%`);
 
     $(".box" ).css( "border-top-right-radius", `${randomIntFromInterval(0, 100)}%`);
     let tr = $(".box" ).css( "border-top-right-radius");
     $("#border_top_right_radius").val(parseInt(tr));
-    $("#tr-lab").text(`Top Left: ${parseInt(tr)}%`);
+    $("#tr-lab").text(`Top Right: ${parseInt(tr)}%`);
 
     $( ".box" ).css( "border-top-left-radius", `${randomIntFromInterval(0, 100)}%`);
     let tl = $( ".box" ).css( "border-top-left-radius");
