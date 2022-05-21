@@ -21,6 +21,11 @@ body {
 }
 .main-list a {
    text-decoration: none;
+    color: #eee;
+    transition: color .3s ease-in-out;
+}
+.main-list a:hover {
+    color: #ec2f4b;
 }
 
 .main-list li {
