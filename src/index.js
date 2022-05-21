@@ -1,5 +1,8 @@
 let newtext;
-
+$("#border_top_left_radius").val(0);
+$("#border_top_right_radius").val(0);
+$("#border_bottom_right_radius").val(0);
+$("#border_bottom_left_radius").val(0);
 function randomIntFromInterval(min, max) { // min and max included
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
