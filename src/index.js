@@ -7,7 +7,7 @@ function randomIntFromInterval(min, max) { // min and max included
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-$("#border_top_left_radius").change(function(){
+$("#border_top_left_radius").bind('input', function(){
     let border_top_left_radius = $(this).val();
     $( ".box" ).css( "border-top-left-radius", `${border_top_left_radius}%`);
     $(".box-container" ).css("border-top-left-radius", `${border_top_left_radius}%`);
@@ -20,7 +20,7 @@ $("#border_top_left_radius").change(function(){
     $("#css-output" ).text(`border-radius: ${newtext};`);
 });
 
-$("#border_top_right_radius").change(function(){
+$("#border_top_right_radius").bind('input', function(){
     let border_top_right_radius = $(this).val();
     $( ".box" ).css( "border-top-right-radius", `${border_top_right_radius}%`);
     $(".box-container" ).css("border-top-right-radius", `${border_top_right_radius}%`);
@@ -32,7 +32,7 @@ $("#border_top_right_radius").change(function(){
     $("#css-output" ).text(`border-radius: ${newtext};`);
 });
 
-$("#border_bottom_right_radius").change(function(){
+$("#border_bottom_right_radius").bind('input', function(){
     let border_bottom_right_radius = $(this).val();
     $( ".box" ).css( "border-bottom-right-radius", `${border_bottom_right_radius}%`);
     $(".box-container" ).css("border-bottom-right-radius", `${border_bottom_right_radius}%`);
@@ -45,7 +45,7 @@ $("#border_bottom_right_radius").change(function(){
     $("#css-output" ).text(`border-radius: ${newtext};`);
 });
 
-$("#border_bottom_left_radius").change(function(){
+$("#border_bottom_left_radius").bind('input', function(){
     let border_bottom_left_radius = $(this).val();
     $( ".box" ).css( "border-bottom-left-radius", `${border_bottom_left_radius}%`);
     $(".box-container" ).css("border-bottom-left-radius", `${border_bottom_left_radius}%`);
