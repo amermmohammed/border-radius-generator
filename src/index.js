@@ -68,7 +68,7 @@ $("#radius-genrator").click(function(){
     $( ".box" ).css( "border-bottom-right-radius", `${randomIntFromInterval(0, 100)}%`);
     let br = $( ".box" ).css( "border-bottom-right-radius");
     $("#border_bottom_right_radius").val(parseInt(br));
-    $("#br-lab").text(`Bottom Left: ${parseInt(br)}%`);
+    $("#br-lab").text(`Bottom Right: ${parseInt(br)}%`);
 
     $(".box" ).css( "border-top-right-radius", `${randomIntFromInterval(0, 100)}%`);
     let tr = $(".box" ).css( "border-top-right-radius");
