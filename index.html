@@ -19,16 +19,28 @@
 <div class="box-container">
     <div class="box"></div>
 </div>
-<div class="controllers-container">
-    <label for="border_top_left_radius"><span id='tl-lab'>Top Left: 0%</span> </label>
-    <input id="border_top_left_radius" type="range" min="0" max="100" value="0" />
-    <label for="border_top_right_radius"><span id='tr-lab'>Top Right: 0%</span> </label>
-    <input id="border_top_right_radius" type="range" min="0" max="100" value="0" />
-    <label for="border_bottom_right_radius"><span id='br-lab'>Bottom Right: 0%</span> </label>
-    <input id="border_bottom_right_radius" type="range" min="0" max="100" value="0" />
-    <label for="border_bottom_left_radius"><span id='bl-lab'>Bottom Left: 0%</span> </label>
-    <input id="border_bottom_left_radius" type="range" min="0" max="100" value="0" />
+<div class="main-controllers">
+    <div class="controllers-container">
+        <label for="border_top_left_radius"><span id='tl-lab'>Top Left: 0%</span> </label>
+        <input id="border_top_left_radius" type="range" min="0" max="100" value="0" />
+        <label for="border_top_right_radius"><span id='tr-lab'>Top Right: 0%</span> </label>
+        <input id="border_top_right_radius" type="range" min="0" max="100" value="0" />
+        <label for="border_bottom_right_radius"><span id='br-lab'>Bottom Right: 0%</span> </label>
+        <input id="border_bottom_right_radius" type="range" min="0" max="100" value="0" />
+        <label for="border_bottom_left_radius"><span id='bl-lab'>Bottom Left: 0%</span> </label>
+        <input id="border_bottom_left_radius" type="range" min="0" max="100" value="0" />
+    </div>
+    <div class="rotation-controller">
+        <label for="rotation-slider"><span id='rotation-value'>transform: rotate(0);</span> </label>
+        <input id="rotation-slider" type="range" min="0" max="360" value="0" />
+        <h5>pre defined</h5>
+        <button id="drop">drop</button>
+        <button id="balloon">balloon/location</button>
+        <button id="eye">eye</button>
+        <button id="circle">circle</button>
+    </div>
 </div>
+
 <div class="generator-container">
     <p id="css-output">border-radius: 0%;</p>
     <button id="radius-generator">Generate random border radius</button>

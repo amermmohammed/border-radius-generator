@@ -61,7 +61,13 @@ body {
 input {
     margin-bottom: 1.5rem;
 }
-
+.main-controllers:not(:last-child) {
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    width: 50%;
+    margin-top: 4rem;
+}
 .controllers-container,
 .generator-container {
     margin: auto;
@@ -70,8 +76,27 @@ input {
     flex-direction: column;
     width: 50%;
 }
+.controllers-container {
+    margin: 0;
+    border-right: 10px solid blue;
+    border-radius: 45px;
+    margin: 0;
+    border-left: 10px solid blue;
+    padding-inline: 2rem;
+}
+
 .generator-container {
     text-align: center;
+}
+.rotation-controller {
+    display: grid;
+    align-content: center;
+    width: 25%;
+    margin-left: 1rem;
+}
+.rotation-controller h5 {
+    text-align: center;
+    text-transform: uppercase;
 }
 button {
     background: #949596;
@@ -107,5 +132,16 @@ button:hover {
         width: 75%;
         text-align: center;
         font-size: .9rem;
+    }
+    .main-controllers {
+        display: block !important;
+        width: 80% !important;
+        margin-inline: 1rem !important;
+        margin-top: 2rem;
+    }
+    .rotation-controller {
+        display: grid;
+        align-content: center;
+        width: 100%;
     }
 }
