@@ -61,6 +61,15 @@ body {
 input {
     margin-bottom: 1.5rem;
 }
+.warning {
+    display: none;
+    color: #ec2f4b;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+#rotation-degree {
+    width: 40px;
+}
 .main-controllers:not(:last-child) {
     display: flex;
     justify-content: center;

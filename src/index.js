@@ -106,13 +106,23 @@ $("#radius-generator").click(function(){
 $("#rotation-slider").bind('input', function(){
     let rotation_degree = $(this).val();
     $(".box-container" ).css("transform", `rotate(${rotation_degree}deg)`);
-    $("#rotation-value").text(`transform: rotate(${parseInt($(this).val())}deg);`);
+    $("#rotation-degree").val(`${rotation_degree}`);
 });
+
+$("#rotation-degree").bind('input', function(){
+    let rotation_degree = $(this).val();
+    if (rotation_degree < 0 || rotation_degree > 360) {
+        $('.warning').css("display", "block");
+    }
+    $(".box-container" ).css("transform", `rotate(${rotation_degree}deg)`);
+    $("#rotation-slider").val(`${rotation_degree}`);
+});
+
 $("#drop").click(function(){
     pre_rotation = 45;
     $("#rotation-slider").val(pre_rotation);
     $(".box-container" ).css("transform", `rotate(${pre_rotation}deg)`);
-    $("#rotation-value").text(`transform: rotate(${pre_rotation}deg);`);
+    $("#rotation-degree").val(`${pre_rotation}`);
 
     $(".box" ).css( "border-top-left-radius", `${0}%`);
     let tl = $( ".box" ).css( "border-top-left-radius");
@@ -145,7 +155,7 @@ $("#balloon").click(function(){
     pre_rotation = 225;
     $("#rotation-slider").val(pre_rotation);
     $(".box-container" ).css("transform", `rotate(${pre_rotation}deg)`);
-    $("#rotation-value").text(`transform: rotate(${pre_rotation}deg);`);
+    $("#rotation-degree").val(`${pre_rotation}`);
 
     $(".box" ).css( "border-top-left-radius", `${0}%`);
     let tl = $( ".box" ).css( "border-top-left-radius");
@@ -177,7 +187,7 @@ $("#eye").click(function(){
     pre_rotation = 225;
     $("#rotation-slider").val(pre_rotation);
     $(".box-container" ).css("transform", `rotate(${pre_rotation}deg)`);
-    $("#rotation-value").text(`transform: rotate(${pre_rotation}deg);`);
+    $("#rotation-degree").val(`${pre_rotation}`);
 
     $(".box" ).css( "border-top-left-radius", `${100}%`);
     let tl = $( ".box" ).css( "border-top-left-radius");
